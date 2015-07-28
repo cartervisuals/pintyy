@@ -1,6 +1,10 @@
 <div class="jumbotron center">
   <h1>Pintyy</h1>
   <p>Get your pins on!</p>
-  <%= link_to "Login", new_user_session_path, class: "btn btn-default" %>
-  <%= link_to "Join", new_user_registration_path, class: "btn btn-primary" %>
+  <% if user_signed_in? %>
+    Welcome <%= current_user.email %>
+  <% else %>
+    <%= link_to "Login", new_user_session_path, class: "btn btn-default" %>
+    <%= link_to "Join", new_user_registration_path, class: "btn btn-primary" %>
+  <% end %>
 </div>
