@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @pin.description %><br>
+  <%= @pin.user.email %>
+</p>
+
+<%= link_to 'Edit', edit_pin_path(@pin), class: "btn btn-xs btn-primary" %>
+<%= link_to 'Back', pins_path, class: "btn btn-xs btn-primary" %>
