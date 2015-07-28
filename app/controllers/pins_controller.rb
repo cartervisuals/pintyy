@@ -21,7 +21,7 @@ class PinsController < ApplicationController
 
   def create
     @pin = current_user.pins.build(pin_params)
-
+    @pin.save
 
     if @pin.save
       redirect_to @pin, notice: 'Pin was successfully created.'
