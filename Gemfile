@@ -5,6 +5,7 @@ ruby '2.2.2'
 gem 'rails_12factor'
 gem 'puma'
 gem 'bootstrap-sass', '~> 3.3.5'
+gem 'devise'
 
 
 

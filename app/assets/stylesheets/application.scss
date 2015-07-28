@@ -1,4 +1,10 @@
-
+$navbar-height: 75px;
+$navbar-default-bg: #FF8080;
+$border-radius-base: 0;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.center {
+  text-align: center;
+}
