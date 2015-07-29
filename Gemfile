@@ -7,6 +7,7 @@ gem 'puma'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'devise'
 gem "paperclip", "~> 4.3"
+gem 'aws-sdk', '~> 2'
 
 
 gem 'rails', '4.2.3'
